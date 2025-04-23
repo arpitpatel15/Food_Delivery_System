@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+body{
+    min-height: 100vh;
+}
+@layer utilities {
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    .animate-fadeIn {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
